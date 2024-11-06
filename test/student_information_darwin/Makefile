@@ -1,0 +1,1 @@
+obj-$(LNX500_TEST) += lnx500_test.o

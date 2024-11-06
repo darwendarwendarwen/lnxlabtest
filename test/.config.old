@@ -1,0 +1,12 @@
+#
+# Automatically generated make config: don't edit
+# MYAPP Configuration
+#
+CONFIG_CROSS_COMPILE="cc"
+CONFIG_ENABLE_LOGGING=y
+CONFIG_DEFAULT_LOGLEVEL=3
+CONFIG_LOGGING_TIME=y
+# CONFIG_DEBUG_LIST is not set
+CONFIG_FOO=y
+CONFIG_BAR=y
+CONFIG_LNX500_TEST=y

@@ -1,0 +1,5 @@
+config LNX500_TEST
+	bool "LNX500 Test configuration"
+	default n
+	help
+	  LNX500 Test config
