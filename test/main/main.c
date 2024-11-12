@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include "../student_information_darwin/LNX500_Test.c"
 
 void debug_of_logging(void);
 
 
 int main(void)
 {
-
-#ifdef LNX500_TEST
-	announce_student();
+#ifdef CONFIG_LNX500_TEST
+	char* announce_student(void);
+	printf(announce_student());
+	printf("\n");
 #endif
 
 #ifdef CONFIG_FOO

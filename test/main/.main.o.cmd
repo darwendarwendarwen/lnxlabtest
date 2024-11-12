@@ -3,6 +3,7 @@ cmd_main/main.o := /home/darwin/x-tools/aarch64-seneca-linux-gnu/bin/aarch64-sen
 source_main/main.o := main/main.c
 
 deps_main/main.o := \
+    $(wildcard include/config/lnx500/test.h) \
     $(wildcard include/config/foo.h) \
     $(wildcard include/config/bar.h) \
   /home/darwin/x-tools/aarch64-seneca-linux-gnu/aarch64-seneca-linux-gnu/sysroot/usr/include/stdc-predef.h \
@@ -28,7 +29,6 @@ deps_main/main.o := \
   /home/darwin/x-tools/aarch64-seneca-linux-gnu/aarch64-seneca-linux-gnu/sysroot/usr/include/bits/types/struct_FILE.h \
   /home/darwin/x-tools/aarch64-seneca-linux-gnu/aarch64-seneca-linux-gnu/sysroot/usr/include/bits/stdio_lim.h \
   /home/darwin/x-tools/aarch64-seneca-linux-gnu/aarch64-seneca-linux-gnu/sysroot/usr/include/bits/sys_errlist.h \
-  main/../student_information_darwin/LNX500_Test.c \
 
 main/main.o: $(deps_main/main.o)
 

@@ -335,11 +335,11 @@ endif # $(dot-config)
 all: myapp
 
 
-objs-y		:= main
-libs-y		:= lib
+objs-y		:= main 
+libs-y		:= lib student_information_darwin
 
-myapp-dirs	:= $(objs-y) $(libs-y) $(student_information_darwin)
-myapp-objs	:= $(patsubst %,%/built-in.o, $(objs-y))
+myapp-dirs	:= $(objs-y) $(libs-y) 
+myapp-objs	:= $(patsubst %,%/built-in.o, $(objs-y)) 
 myapp-libs	:= $(patsubst %,%/lib.a, $(libs-y))
 myapp-all	:= $(myapp-objs) $(myapp-libs)
 

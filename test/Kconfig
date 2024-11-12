@@ -20,6 +20,8 @@ config CROSS_COMPILE
 
 source "lib/Kconfig"
 
+source "student_information_darwin/Kconfig"
+
 config FOO
 	bool "Foo"
 	help
@@ -30,4 +32,6 @@ config BAR
 	depends on FOO
 	help
 	  bar.
+
+
 
